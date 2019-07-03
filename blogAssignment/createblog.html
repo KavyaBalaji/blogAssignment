@@ -1,0 +1,48 @@
+<!DoctypeHTML>
+<html>
+	<head>
+		<title>Create Blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="blog.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="blogAssignment.css">
+	</head>
+	<body>
+		<div id="createBlogPage">
+			<div id="createBlog">
+				<header><h1 align="center">Create Blog </h1></header>
+			</div>
+			<div id="blog1">
+				<div id="titleText">
+					<input type="text" id="blogTitle" name="title" placeholder="Title">
+					<input type="hidden" id="titId">
+				</div>
+				
+				<div id="contentText">
+					<textarea id="blogContent" name="Content" placeholder="Content" rows="7" cols="50"></textarea>
+				</div>
+				<div id="saveCanceButtons">
+				<button name="save" id="saveBtn" class="btnClass" onClick = "saveBlog()">SAVE</button>
+				<button name="cancel" id="cancelBtn" class="btnClass" onClick = "cancelBlog()">CANCEL</button>
+			</div>
+			</div>
+		</div>		
+	</body>
+</html>
+<script>
+var url_string=window. location. href;
+    var url = new URL(url_string);
+    var c = url.searchParams.get("id");
+	var tbClients = localStorage.getItem("blogContent");
+    var tbClients1 = JSON.parse(tbClients);
+          if(c != null){
+
+	          var cli = JSON.parse(tbClients1[c]);
+	          document.getElementById("blogTitle").value=cli.Title;
+            document.getElementById("blogContent").value=cli.Content;
+            document.getElementById("titId").value=c;
+	
+          }
+
+</script>

@@ -1,0 +1,85 @@
+#blogHeading,#createBlog{
+	background-color: #ff9933;
+}
+#blogHeader{
+	position:fixed;
+	top:0px;
+	background-color: #ff9933;
+	align:center;
+	width:100%;
+}
+
+#btnCreate{
+
+    background-color: #2091eb;
+	    float: right;
+	width: 30%;
+    height: 3em;
+    font-family: auto;
+    font-size: medium;
+}
+#blogTitle{
+	width:100%;
+	height:3em;
+}
+input[type="text"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+				font-size: medium vw;
+            } 
+/*#blogContent{
+	 width:50%;
+	margin-left:25%;
+	margin-right:25%;
+ }*/
+ textarea::placeholder { 
+            text-align: center;
+			/*font-size: medium;*/			
+        } 
+#contentText{
+margin-top:10%;	
+}
+.btnClass{
+	width: 49%;
+    height: 3em;
+    font-family: auto;
+    font-size: medium;
+}
+#saveCanceButtons{
+	width:100%;
+	margin-top: 5%;
+}
+
+#saveBtn{
+	/*margin-left: 25%;*/
+    background-color: #1ba548;
+}
+#cancelBtn{
+	background-color : #ff0000;
+}
+.showTitle{
+	width:50%;
+	margin-right:10%;
+	height:3em;
+}
+#displayTitle{
+    width: 70%;
+    margin-left: 10%;
+	margin-top: 4%;
+}
+#displayContent{
+	    margin-left: 10%;
+    margin-top: 5%;
+    width: 70%;
+}
+#blog1{
+	    width: 50%;
+    position: absolute;
+    left: 25%
+}
+.blog{
+width: 70%;
+	    margin-top: 9%;
+}
+
